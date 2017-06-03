@@ -1,28 +1,35 @@
 import React, { Component } from 'react'
 import './SCWhat.css'
 
-class SCWhere extends Component {
+class SCWhat extends Component {
   render() {
-    let branches = this.props.branches.map((branch, index) => {
-      return(
-        <option key={index + 1} value={branch.name}>{branch.name}</option>
-      )
-    })
-    branches.unshift(
-      <option key="0">Pick your branch</option>
+    return(
+      <div>
+        <form>
+          <p>Search by title, author, or ISBN</p>
+          <p>
+            <label>Title:</label>
+            <input type="text"/>
+          </p>
+          <br/>
+          <p>
+            <label>Author:</label>
+            <input type="text"/>
+          </p>
+          <br/>
+          <p>
+            <label>ISBN:</label>
+            <input type="number"/>
+          </p>
+          <br/>
+          <input type="submit" value="Search"/>
+        </form>
+      </div>
     )
-        return(
-          <div className="menu">
-            <p>Please select a branch</p>
-            <select>
-              {branches}
-            </select>
-          </div>
-        )
 
 
 
     }
 }
 
-export default SCWhere
+export default SCWhat
