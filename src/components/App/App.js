@@ -16,7 +16,7 @@ class App extends Component {
     super()
     this.state = {
       sourcelibrary: null,
-      libraries: [
+      branches: [
         {name: "Mt. Pleasant" , address: "3160 16th St NW"},
         {name: "MLK Memorial" , address: "901 G St NW"},
         {name: "Petworth", address: "4200 Kansas Ave NW"},
@@ -28,16 +28,30 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-      <h2>welcome to DC library finder</h2>
+      <Router>
+        <div>
+        <h2>welcome to DC library finder</h2>
+        <nav>
+          <Link to="#">Where to Read</Link><br />
+          <Link to="#">What to Read</Link>
+        </nav>
+        <main>
+          <Route
+            render={() => {
+              return(
+                <SCWhere
+                  branches={this.state.branches}
+                />
+              )
+            }}
+          />
 
 
 
-        <p>Please select a branch</p>
-        <select>
-          {this.libraries}
-        </select>
-      </div>
+        </main>
+        </div>
+      </Router>
+
     );
   }
 }
