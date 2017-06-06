@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios'
 
+
 import SCWhere from '../SearchContainers/SCWhere.js'
 import SCWhat from '../SearchContainers/SCWhat.js'
+
 import {
   BrowserRouter as Router,
   Route,
@@ -48,11 +50,11 @@ class App extends Component {
         {name: "Woodridge" , address: "1801 Hamlin St NE"}
 
       ],
-      searchTitle: null,
-      searchAuthor: null,
-      searchISBN: null
+    
     }
   }
+
+
 
   render() {
     return (
