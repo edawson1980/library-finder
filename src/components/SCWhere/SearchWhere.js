@@ -12,18 +12,18 @@ class SearchWhere extends Component {
   }
 
   render(){
-    let {branches} = this.props.branches.map((branch, index) => {
+    let {locations} = this.props.locations.map((location, index) => {
       return(
-        <option key={index + 1} value={branch.name}>{branch.name}</option>
+        <option key={index + 1} value={location.name}>{location.name}</option>
       )
     })
-    branches.unshift(
-      <option key="0">Pick your branch</option>
+    locations.unshift(
+      <option key="0">Pick your location</option>
     )
         return(
           <div className="menu">
             <select value={this.props.query} onChange={this.onChange}>
-              {branches}
+              {locations}
             </select>
           </div>
         )

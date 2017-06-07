@@ -1,6 +1,6 @@
 import $ from 'jquery'
 
-const branches = [
+const locations = [
   {name: "Anacostia" , address: "1800 Good Hope Rd SE"},
   {name: "Bellevue" , address: "115 Atlantic St SW"},
   {name: "Benning" , address: "3935 Benning Rd NE"},
@@ -31,6 +31,6 @@ const branches = [
 
 ]
 
-export function queryBranches(query){
-  return branches
+export function queryLocations(query){
+  return locations
 }
