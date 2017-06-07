@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import SearchWhere from '../SCWhere/SearchWhere'
 import axios from 'axios'
 import {
   BrowserRouter as Router,
@@ -14,6 +15,8 @@ class App extends Component {
       <div>
         <h1>Welcome to BookWorm!</h1>
         <h3>Your new fave app for reading resources in the District and beyond.</h3>
+
+        <SearchWhere />
       </div>
     )
   }
