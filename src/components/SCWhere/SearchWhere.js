@@ -12,7 +12,7 @@ class SearchWhere extends Component {
   }
 
   render(){
-    let {locations} = this.props.locations.map((location, index) => {
+    let locations = this.props.locations.map((location, index) => {
       return(
         <option key={index + 1} value={location.name}>{location.name}</option>
       )
