@@ -2,44 +2,57 @@ import React, { Component } from 'react'
 import SCWhere from '../SCWhere/SCWhere'
 import SCWhat from '../SCWhat/SCWhat'
 import axios from 'axios'
+import _ from 'lodash'
 import {
   BrowserRouter as Router,
   Route,
   Link,
+  Redirect
 } from 'react-router-dom'
 
-import './App.css';
+// import './App.css';
+// import 'bulma/css/bulma.css'
 
 class App extends Component {
   render (){
     return (
       <Router>
-        <div>
+        <div className="content">
           <header>
             <h1>Welcome to BookWorm!</h1>
             <h3>Your new fave app for reading resources in the District and beyond.</h3>
-          </header>
-          <nav>
-            <Link to="/where">Where To Read</Link>
-            <Link to="/what">What To Read</Link>
+
+          <nav className="nav">
+            <div className="nav-right">
+              <Link to="/where" className="nav-item">Where To Read</Link><br/>
+              <Link to="/what" className="nav-item">What To Read</Link>
+            </div>
           </nav>
-          <main>
-            <Route
-              path=""
-              render={() => {
-                return(
-                  <SCWhere />
-                )
-              }}
-            />
-            <Route
-              path=""
-              render={() => {
-                return(
-                  <SCWhat />
-                )
-              }}
-            />
+          </header>
+          <main className="columns">
+            <div className="column is-three-quarters">
+              <Route
+                path="/where"
+                render={() => {
+                  return(
+                    <SCWhere />
+                  )
+                }}
+              />
+              <Route
+                path="/what"
+                render={() => {
+                  return(
+                    <SCWhat />
+                  )
+                }}
+              />
+            </div>
+            <div className="column">
+              <h3>Resources</h3>
+              <p>Get a library card:</p>
+              <p>Local bookstores:</p>
+            </div>
           </main>
         </div>
       </Router>

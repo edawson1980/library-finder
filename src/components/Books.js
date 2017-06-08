@@ -1,21 +1,23 @@
 import $ from 'jquery'
 import axios from 'axios'
+import map from 'lodash'
 import SCWhat from './SCWhat/SCWhat'
 
-export function queryBooks(title){
+export function queryBooks(titleQuery){
   console.log('finding books!')
-  const term = title
-  var url = "https://www.googleapis.com/books/v1/volumes?q=" + term + "&key=AIzaSyAuyXZMeyWg-0IBR8q7K7dTYlWkEq9oYxY";
+  const term = titleQuery
+  var url = "https://www.googleapis.com/books/v1/volumes?q=title:" + term + "&key=AIzaSyAuyXZMeyWg-0IBR8q7K7dTYlWkEq9oYxY";
+// .replace(/\s/, "+");
 
-// .replace(/\s/, "+")
   return axios.get(url).then(function(response) {
     console.log('raw response:')
     console.log(response)
 
-    return response.map(result => {
-      const{title} = result.book;
+//originally was response.map, but keeps throwing 'not a function' error
+    return map(response).map(result => {
+      const{volumeInfo} = result.book;
       return {
-        title
+        volumeInfo
       }
     })
   })

@@ -30,7 +30,7 @@ class SearchWhat extends Component {
           <input
             type="text"
             placeholder="Enter a title here"
-            value={this.props.searchTitle}
+            value={this.props.query}
             onChange={this.handleTitleInput} />
           <input
             type="text"

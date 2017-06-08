@@ -17,10 +17,14 @@ class SCWhat extends Component {
       books: []
     }
   }
+//   handleSearchInput(searchText){
+//   console.log(searchText)
+//   this.setState({query: searchText})
+// }
 
-  handleTitleInput(titleInput){
-    console.log(titleInput)
-    this.setState({titleQuery: titleInput})
+  handleTitleInput(searchText){
+    console.log(searchText)
+    this.setState({titleQuery: searchText})
   }
 
   handleAuthorInput(authorInput){
