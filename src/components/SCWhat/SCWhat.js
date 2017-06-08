@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import SearchWhat from './SearchWhat'
 import RWhat from '../RWhat/RWhat'
-import {queryBooks} from '../Books'
+import {queryBooks} from '../Books.js'
 //import Books axios calls
 
 class SCWhat extends Component {

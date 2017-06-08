@@ -50,8 +50,9 @@ class App extends Component {
             </div>
             <div className="column">
               <h3>Resources</h3>
-              <p>Get a library card:</p>
-              <p>Local bookstores:</p>
+              <a href="#">Get a library card</a><br/>
+              <a href="#">Support your local book store</a>
+
             </div>
           </main>
         </div>

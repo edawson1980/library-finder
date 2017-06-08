@@ -14,14 +14,10 @@ export function queryBooks(titleQuery){
     console.log(response)
 
 //originally was response.map, but keeps throwing 'not a function' error
-    return map(response).map(result => {
-      const{volumeInfo} = result.book;
-      return {
-        volumeInfo
-      }
-    })
+  return response.data.items.map(item => {
+      return item.volumeInfo
   })
-
+})
 }
 
 
