@@ -11,7 +11,8 @@ class RWhere extends Component {
           <img
             className="Results_item_image"
             src='#'
-            alt=('Map goes here.')/>
+            // alt=('Map goes here.')
+          />
 
           <p className="Results_item_name">{location.name}</p>
 

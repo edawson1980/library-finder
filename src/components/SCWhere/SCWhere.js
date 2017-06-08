@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import SearchWhere from './SearchWhere'
-import RWhere from './RWhere'
+import RWhere from '../RWhere/RWhere'
 import {queryLocations} from '../Utils'
 
 

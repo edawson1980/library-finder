@@ -12,18 +12,18 @@ class SearchWhere extends Component {
   }
 
   render(){
-    let locations = this.props.locations.map((location, index) => {
-      return(
-        <option key={index + 1} value={location.name}>{location.name}</option>
-      )
-    })
-    locations.unshift(
-      <option key="0">Pick your location</option>
-    )
+    // let locations = this.props.locations.map((location, index) => {
+    //   return(
+    //     <option key={index + 1} value={location.name}>{location.name}</option>
+    //   )
+    // })
+    // locations.unshift(
+    //   <option key="0">Pick your location</option>
+    // )
         return(
           <div className="menu">
             <select value={this.props.query} onChange={this.onChange}>
-              {locations}
+              {/* {locations} */}
             </select>
           </div>
         )
