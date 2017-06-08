@@ -10,7 +10,7 @@ import {
   Redirect
 } from 'react-router-dom'
 
-// import './App.css';
+import './App.css';
 // import 'bulma/css/bulma.css'
 
 class App extends Component {
@@ -48,7 +48,7 @@ class App extends Component {
                 }}
               />
             </div>
-            <div className="column">
+            <div className="sidebar">
               <h3>Resources</h3>
               <a href="#">Get a library card</a><br/>
               <a href="#">Support your local book store</a>

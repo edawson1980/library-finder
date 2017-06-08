@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import SearchWhat from './SearchWhat'
 import RWhat from '../RWhat/RWhat'
+import axios from 'axios'
 import {queryBooks} from '../Books.js'
 //import Books axios calls
 
@@ -22,9 +23,9 @@ class SCWhat extends Component {
 //   this.setState({query: searchText})
 // }
 
-  handleTitleInput(searchText){
-    console.log(searchText)
-    this.setState({titleQuery: searchText})
+  handleTitleInput(titleInput){
+    // console.log(titleInput)
+    this.setState({titleQuery: titleInput}, () => {console.log(this.state.titleQuery)})
   }
 
   handleAuthorInput(authorInput){

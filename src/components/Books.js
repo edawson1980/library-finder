@@ -1,7 +1,7 @@
 import $ from 'jquery'
 import axios from 'axios'
 import map from 'lodash'
-import SCWhat from './SCWhat/SCWhat'
+import SCWhat from './SCWhat/SCWhat.js'
 
 export function queryBooks(titleQuery){
   console.log('finding books!')
@@ -10,8 +10,8 @@ export function queryBooks(titleQuery){
 // .replace(/\s/, "+");
 
   return axios.get(url).then(function(response) {
-    console.log('raw response:')
-    console.log(response)
+    // console.log('raw response:')
+    // console.log(response)
 
 //originally was response.map, but keeps throwing 'not a function' error
   return response.data.items.map(item => {
