@@ -1,35 +1,25 @@
 import React, { Component } from 'react'
-import './What.css'
-
-var books= [
- {title: "For Whom The Bell Tolls" , author: "Ernest Hemingway"},
- {title: "Filth" , author: "Irvine Welsh"}
-]
+import './RWhat.css'
 
 
-class What extends Component {
-
+class RWhat extends Component {
   render (){
-
-    let books =this.props
+    let {books} =this.props
     console.log(books)
-    let results = books.map((book, index) => {
+    let bookResults = books.map((book, index) => {
       return (
-        <div key={index} value={books}>
-          <ul>
-            <li>{book.title}</li>
-            <li>{book.author}</li>
-          </ul>
-
+        <div key={index} className="bookResults_item">
+          <h3>{book.title}</h3>
+          <h3>By: {book.author}</h3>
         </div>
       )
     })
     return (
-      <div className="whatResults">
-        {results}
+      <div className="bookResults">
+        {bookResults}
       </div>
     )
   }
 }
 
-export default What
+export default RWhat
