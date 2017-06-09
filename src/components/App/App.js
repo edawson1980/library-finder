@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-import BooksContainer from '../containers/BooksContainer.js'
-import LocationsContainer from '../containers/LocationsContainer.js'
+import BooksContainer from '../Containers/BooksContainer.js'
+import LocationsContainer from '../Containers/LocationsContainer.js'
 import axios from 'axios'
-import _ from 'lodash'
 import {
   BrowserRouter as Router,
   Route,
