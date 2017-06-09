@@ -14,7 +14,7 @@ class BooksList extends Component {
       return (
         <div key={id}>
           <h2 className="resource-link">{title}</h2>
-          {/* <h2>make this a url.  dammit.{preview}</h2> */}
+          <a href={preview} target="_blank" rel="noopener noreferrer">find it online!</a>
 
 
 
