@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import SCWhere from '../SCWhere/SCWhere'
 import BooksContainer from '../containers/BooksContainer.js'
+import LocationsContainer from '../containers/LocationsContainer.js'
 import axios from 'axios'
 import _ from 'lodash'
 import {
@@ -24,14 +24,14 @@ class App extends Component {
 
           <nav className="nav">
             <div className="nav-right">
-              <Link to="/where" className="nav-item">Where To Read</Link><br/>
+              <Link to="/locations" className="nav-item">Where To Read</Link><br/>
               <Link to="/books" className="nav-item">What To Read</Link>
             </div>
           </nav>
           </header>
           <main className="columns">
             <div className="column is-three-quarters">
-              {/* <Route path="/where" component={SCWhere} /> */}
+              <Route path="/locations" component={LocationsContainer} />
               <Route path="/books" component={BooksContainer} />
             </div>
             <div className="sidebar">

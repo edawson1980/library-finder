@@ -31,6 +31,7 @@ class BooksContainer extends Component {
     var url = "https://www.googleapis.com/books/v1/volumes?q=title:" + title + "&key=AIzaSyAuyXZMeyWg-0IBR8q7K7dTYlWkEq9oYxY"
 
     axios.get(url).then((response) => {
+      console.log(response)
       this.setState({
         searchResults: response.data.items
       })
@@ -41,7 +42,7 @@ class BooksContainer extends Component {
     return (
       <div>
         <form>
-          <p>Search by title, author, or ISBN</p>
+          <p>Search by title</p>
           <p>
             <label>Title:</label>
             <input type="text" name="titleQuery" value={this.state.titleQuery} onChange={this.handleChange}/>
