@@ -4,7 +4,7 @@ _–Isaac Asimov_
 
 (put your screenshot here)
 
-#BookWorm
+# BookWorm
 
 BookWorm is a React app that aims to make reading material more accessible.  Specifically, it is comprised of two parts...Where To Read and What To Read.
 
