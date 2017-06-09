@@ -4,6 +4,8 @@
   height: 100%;
   background-color: #FCEBB6;
   font-family: 'Patrick Hand SC', cursive;
+  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Shadows Into Light', cursive;
   padding: 30px;
 }
 
@@ -15,7 +17,7 @@
 
 .nav-left {
   background-color: lightgreen;
-  
+
 
 }
 
@@ -27,6 +29,11 @@
   /*display: block;*/
   margin-top: 10px;
   text-align: center;
+
+}
+
+.resource-link {
+  font-family: 'Droid Sans', sans-serif;
 
 }
 

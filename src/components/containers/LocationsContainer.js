@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import axios from 'axios'
-// import LocationsList from '../Locations/LocationsList'
+import LocationsList from '../Locations/LocationsList'
 
 class LocationsContainer extends Component {
   constructor(props){
@@ -37,6 +37,23 @@ class LocationsContainer extends Component {
     console.log(selectedLocation, 'something is working')
   }
 
+
+  getMaps(e) {
+    e.preventDefault()
+    // console.log(this.state.titleQuery)
+    let address = this.state.pizza.address
+    //pretty sure that's not right
+
+    
+    var url = "https://maps.googleapis.com/maps/api/staticmap?center=" + address +"&zoom=14&size=400x400&markers=color:blue%7Csize=small%7C"+ address +"&key=AIzaSyC1VFtSkzUv302ClmH1uGLHwIyzthAAaqo"
+
+    axios.get(url).then((response) => {
+      console.log(response)
+      this.setState({
+        searchResults: response.data.items,
+      })
+    })
+  }
 
 
 
@@ -82,12 +99,14 @@ class LocationsContainer extends Component {
 
         </select>
 
+
         <p>{this.state.locationResults}</p>
 
 
-        {/* <div>
+
+        <div>
           <LocationsList locations={this.state.locationResults} />
-        </div> */}
+        </div>
       </div>
 
     )

@@ -13,7 +13,7 @@ class BooksList extends Component {
       let preview = item.volumeInfo.previewLink
       return (
         <div key={id}>
-          <h2>{title}</h2>
+          <h2 className="resource-link">{title}</h2>
           {/* <h2>make this a url.  dammit.{preview}</h2> */}
 
 
@@ -23,7 +23,7 @@ class BooksList extends Component {
     })
     return (
       <div>
-        <h4>Results: </h4>
+        <h4 className="resource-link">Results: </h4>
         {books}
       </div>
     )

@@ -3,6 +3,8 @@ import React, { Component } from 'react'
 class LocationsList extends Component {
   render() {
     let locations = this.props.locations.map((item, id) => {
+      //error 'not a function'.  presumably because locations in undefined?
+      //due to issue with LocationsContainer
 
       return (
         <div key={id}>
@@ -12,7 +14,7 @@ class LocationsList extends Component {
     })
     return (
       <div>
-        <h2>Books</h2>
+        <h2>Library</h2>
         {locations}
       </div>
     )

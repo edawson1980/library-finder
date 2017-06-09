@@ -51,9 +51,10 @@ class App extends Component {
             <section className="sidebar">
               <div className="tile is-vertical notification is-info">
                 <h3 className="subtitle is-3">Resources</h3><br/>
-                <a href="#">Get a library card</a><br/>
+                <a href="https://www.dclibrary.org/getacard" target="_blank" className="resource-link">Get a library card</a><br/>
                 <br/>
-                <a href="#">Support your local book store</a>
+                <a href="https://www.washingtonian.com/2015/12/14/a-guide-to-independent-bookstores-in-dc/" target="_blank" className="resource-link">Support your local book store</a>
+
                 <br/>
 
               </div>
