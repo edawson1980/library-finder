@@ -33,6 +33,12 @@ class App extends Component {
             <div className="column is-three-quarters">
               <Route path="/locations" component={LocationsContainer} />
               <Route path="/books" component={BooksContainer} />
+              <Route
+                path="/*"
+                render={() => {
+                  return <Redirect to="/search" />
+                }}
+              />
             </div>
             <div className="sidebar">
               <h3>Resources</h3>

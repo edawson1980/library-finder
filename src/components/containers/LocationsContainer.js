@@ -34,6 +34,7 @@ class LocationsContainer extends Component {
     this.setState({
       locationResults: this.state.selectedLocation
     })
+    console.log(selectedLocation, 'something is working')
   }
 
 
@@ -41,26 +42,43 @@ class LocationsContainer extends Component {
 
 
   render (){
-    // console.log(locationsBase, 'this is working');
+  //   let locationsBase=[
+  //    {name: "Anacostia" , address: "1800 Good Hope Rd SE"},
+  //    {name: "Bellevue" , address: "115 Atlantic St SW"},
+  //    {name: "Benning" , address: "3935 Benning Rd NE"},
+  //    {name: "Capitol View" , address: "5001 Central Ave SE"}
+  //  ]
 
-    // let location = this.props.locationsBase.map((name, index) => {
-    //   console.log(location)
-    //   return(
-    //     <option key={index + 1} value={this.state.locationQuery}>{this.state.location.name}</option>
-    //   )
-    // })
-    // location.unshift(
-    //   <option key="0">Pick your location</option>
-    // )
+    // var createDrop = function(locationsBase){
+    //   console.log(locationsBase, 'this is working');
+      // let pizza = this.props.locationsBase.map((name, index) => {
+      //   console.log(pizza)
+      //   return(
+      //     <option key={index + 1} value={this.state.locationQuery}>{pizza.name}</option>
+      //     //kicks out to 1. Anacostia, etc
+      //
+      //   )
+      //
+      //   pizza.unshift(
+      //     <option key="0">Pick your location</option>
+      //   )
+      // })
+    // }
+
+// onClick={this.searchLocations}>
 
     return (
       <div>
-        {/* name="locationQuery" value={this.state.locationQuery} */}
-        <select className="menu" onChange={this.searchLocations}>
-          {/* <option value={this.state.locationQuery}>Anacostia</option>
-          <option value={this.state.locationQuery}>Benning</option>
-          <option value={this.state.locationQuery}>Capitol View</option> */}
+        <form>
+        <select className="menu" name="locationQuery" value={this.state.locationQuery} onChange={this.searchLocations}>
+          {/* {pizza} */}
+          <option value={this.state.locationQuery}>Bellevue</option>
+          <option value={this.state.locationQuery}>Anacostia</option>
+          <option value={this.state.locationQuery}>Brentwood</option>
         </select>
+        </form>
+        <p>{this.state.locationResults}</p>
+
 
         {/* <div>
           <LocationsList locations={this.state.locationResults} />

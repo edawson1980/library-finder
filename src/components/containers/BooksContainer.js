@@ -33,7 +33,7 @@ class BooksContainer extends Component {
     axios.get(url).then((response) => {
       console.log(response)
       this.setState({
-        searchResults: response.data.items
+        searchResults: response.data.items,
       })
     })
   }
