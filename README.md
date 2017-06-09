@@ -4,25 +4,25 @@ _–Isaac Asimov_
 
 (put your screenshot here)
 
-#BookWorm#
+#BookWorm
 
 BookWorm is a React app that aims to make reading material more accessible.  Specifically, it is comprised of two parts...Where To Read and What To Read.
 
 
-##Where To Read##
+##Where To Read
 
   This section provides the user with a complete list of all the branches in the DC Public Library system, along with a map and hours of operation.
 
-##What To Read##
+##What To Read
 
   This section provides the user with a method to search for books online.  Once the search results are returned, a link takes the user to that book's entry in the GoogleBooks db.  From there we are able to preview, purchase, or download a copy.  We are also able to search for the book in brick-and-mortar library systems.
 
-###Additional Resources###
+###Additional Resources
 
   The aim of this project is get more people reading, and to that end the user will also find information on getting a library card in DC, and a list of local book sellers in the area.
 
 
-####Technologies Used####
+####Technologies Used
 
   This was built entirely in React, and styled using Bulma.  All Axios calls went to external APIs.  In order to run this on our machines, we will need to install Bulma as a dependency (in package.json).  We will also need to install Axios and React-Router.
 
@@ -30,13 +30,14 @@ BookWorm is a React app that aims to make reading material more accessible.  Spe
    - navigate to the library-finder directory in your terminal.
 
    then (one at a time):
+
   $ npm install --save bulma
 
   $ npm install --save axios
 
   $ npm install --save react-router
 
-####User Stories####
+####User Stories
 
 **MVP:**
 
@@ -60,7 +61,7 @@ BookWorm is a React app that aims to make reading material more accessible.  Spe
 -The user will be able to discover which libraries have their book in stock.
 
 
-####Wireframes####
+####Wireframes
 (there are a couple of different iterations)
 
 the most recent one:
@@ -71,7 +72,7 @@ the original:
 
 [Imgur](http://i.imgur.com/hnQh7qV.jpg)
 
-####Unsolved Problems/Major Hurdles####
+####Unsolved Problems/Major Hurdles
 
 There are plenty of features I wish I had been able to add.  I intend to get them up and running by the Showcase.  I also wish that my styling were a little more sleek, but for now it'll do.
 
