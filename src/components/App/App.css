@@ -1,17 +1,36 @@
 .content {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
   background-color: #FCEBB6;
-  max-height: 100%;
   font-family: 'Patrick Hand SC', cursive;
   padding: 30px;
 }
 
 
-header {
+.header {
   background-color: lavender;
-  border-bottom: 5px solid navy;
+  border: 5px solid navy;
+}
+
+.nav-left {
+  background-color: lightgreen;
+  
+
+}
+
+.nav-item {
+  font-size: 40px;
 }
 
 .sidebar {
-  display: block;
+  /*display: block;*/
+  margin-top: 10px;
+  text-align: center;
 
+}
+
+.tile {
+  margin-top: 20px;
+  height: 200px;
 }

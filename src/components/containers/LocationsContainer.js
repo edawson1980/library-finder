@@ -51,25 +51,25 @@ class LocationsContainer extends Component {
 
     // var createDrop = function(locationsBase){
     //   console.log(locationsBase, 'this is working');
-      // let pizza = this.props.locationsBase.map((name, index) => {
-      //   console.log(pizza)
-      //   return(
-      //     <option key={index + 1} value={this.state.locationQuery}>{pizza.name}</option>
-      //     //kicks out to 1. Anacostia, etc
-      //
-      //   )
-      //
-      //   pizza.unshift(
-      //     <option key="0">Pick your location</option>
-      //   )
-      // })
+    //   let pizza = this.props.locationsBase.map((name, index) => {
+    //     console.log(pizza)
+    //     return(
+    //       <option key={index + 1} value={this.state.locationQuery}>{pizza.name}</option>
+    //       //kicks out to 1. Anacostia, etc
+    //
+    //     )
+    //
+    //     pizza.unshift(
+    //       <option key="0">Pick your location</option>
+    //     )
+    //   })
     // }
 
 // onClick={this.searchLocations}>
 
     return (
       <div>
-
+        <h3>Choose your branch!</h3>
         <select className="menu" name="locationQuery" onChange={this.searchLocations}>
           {/* {pizza} */}
           <option value={this.state.locationQuery}>Anacostia</option>

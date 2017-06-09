@@ -47,12 +47,12 @@ class BooksContainer extends Component {
             <label>Title:</label>
             <input type="text" name="titleQuery" value={this.state.titleQuery} onChange={this.handleChange}/>
           </p>
-          <br/>
+          {/* <br/> */}
           {/* <p>
             <label>Author:</label>
             <input type="text" name="authorQuery" value={this.state.authorQuery} onChange={this.handleChange}/>
           </p> */}
-          <br/>
+          {/* <br/> */}
           <input type="submit" value="Search" onClick={this.searchBooks}/>
         </form>
         <div>

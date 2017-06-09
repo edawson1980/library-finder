@@ -23,7 +23,7 @@ class BooksList extends Component {
     })
     return (
       <div>
-        <h2>Books</h2>
+        <h4>Results: </h4>
         {books}
       </div>
     )
