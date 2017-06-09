@@ -16,6 +16,7 @@ class LocationsContainer extends Component {
       // console.log(locationsBase, 'this is working');
     this.handleOnChange = this.handleOnChange.bind(this)
     this.searchLocations = this.searchLocations.bind(this)
+    this.getMaps = this.getMaps.bind(this)
   }
   componentDidMount(){
     this.setState({
@@ -66,14 +67,15 @@ class LocationsContainer extends Component {
     this.setState({
       locationResults: this.state.selectedLocation
     })
-    console.log(selectedLocation, 'something is working')
+    alert('imagine a pretty cool map right here.')
+    console.log(this.locationResults, 'something is working')
   }
 
 
   getMaps(e) {
     e.preventDefault()
     // console.log(this.state.titleQuery)
-    let address = this.state.pizza.address
+    let address = this.state.item.address
     //pretty sure that's not right
 
 
@@ -91,13 +93,6 @@ class LocationsContainer extends Component {
 
 
   render (){
-  //   let locationsBase=[
-  //    {name: "Anacostia" , address: "1800 Good Hope Rd SE"},
-  //    {name: "Bellevue" , address: "115 Atlantic St SW"},
-  //    {name: "Benning" , address: "3935 Benning Rd NE"},
-  //    {name: "Capitol View" , address: "5001 Central Ave SE"}
-  //  ]
-
       let options = this.state.locationsBase.map((item, index) => {
         return(
           <option key={index + 1} value={this.state.locationsBase}>{item.name}</option>
@@ -115,14 +110,6 @@ class LocationsContainer extends Component {
         <h3>Choose your branch!</h3>
         <select className="menu" name="locationQuery" onChange={this.searchLocations}>
           {options}
-          {/* <option value={this.state.locationQuery}>Anacostia</option>
-          <option value={this.state.locationQuery}>Bellevue</option>
-          <option value={this.state.locationQuery}>Benning</option>
-          <option value={this.state.locationQuery}>Capitol View</option>
-          <option value={this.state.locationQuery}>Chevy Chase</option>
-          <option value={this.state.locationQuery}>Cleveland Park</option>
-          <option value={this.state.locationQuery}>Deanwood</option> */}
-
         </select>
 
 
@@ -131,7 +118,8 @@ class LocationsContainer extends Component {
 
 
         <div>
-          {/* <LocationsList locations={this.state.locationResults} /> */}
+          {/* <LocationsList /> */}
+          {/* commented out until LocationsList gets figured out */}
         </div>
       </div>
 
