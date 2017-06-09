@@ -69,14 +69,19 @@ class LocationsContainer extends Component {
 
     return (
       <div>
-        <form>
-        <select className="menu" name="locationQuery" value={this.state.locationQuery} onChange={this.searchLocations}>
+
+        <select className="menu" name="locationQuery" onChange={this.searchLocations}>
           {/* {pizza} */}
-          <option value={this.state.locationQuery}>Bellevue</option>
           <option value={this.state.locationQuery}>Anacostia</option>
-          <option value={this.state.locationQuery}>Brentwood</option>
+          <option value={this.state.locationQuery}>Bellevue</option>
+          <option value={this.state.locationQuery}>Benning</option>
+          <option value={this.state.locationQuery}>Capitol View</option>
+          <option value={this.state.locationQuery}>Chevy Chase</option>
+          <option value={this.state.locationQuery}>Cleveland Park</option>
+          <option value={this.state.locationQuery}>Deanwood</option>
+
         </select>
-        </form>
+
         <p>{this.state.locationResults}</p>
 
 
