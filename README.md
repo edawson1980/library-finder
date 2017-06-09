@@ -2,7 +2,7 @@ _"When I read about the way in which library funds are being cut and cut, I can 
 
 _–Isaac Asimov_
 
-<img width="600" height="600" alt="screen shot 2017-06-09 at 1 31 59 pm" src="https://user-images.githubusercontent.com/16961196/26987118-52843b5e-4d18-11e7-8ff2-fa652b79e93a.png">
+<img width="1276" alt="screen shot 2017-06-09 at 1 31 59 pm" src="https://user-images.githubusercontent.com/16961196/26987118-52843b5e-4d18-11e7-8ff2-fa652b79e93a.png">
 
 # BookWorm
 
