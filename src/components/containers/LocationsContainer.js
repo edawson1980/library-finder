@@ -64,8 +64,9 @@ class LocationsContainer extends Component {
   searchLocations(e){
     e.preventDefault()
     let selectedLocation = this.state.locationQuery
+    console.log(this.selectedLocation)
     this.setState({
-      locationResults: this.state.selectedLocation
+       locationResults:  this.state.selectedLocation
     })
     alert('imagine a pretty cool map right here.')
     console.log(this.locationResults, 'something is working')
