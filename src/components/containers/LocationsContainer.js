@@ -68,8 +68,8 @@ class LocationsContainer extends Component {
     this.setState({
        locationResults:  this.state.selectedLocation
     })
-    alert('imagine a pretty cool map right here.')
     console.log(this.locationResults, 'something is working')
+    alert('imagine a pretty cool map right here.')
   }
 
 
